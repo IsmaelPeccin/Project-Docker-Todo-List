@@ -1,6 +1,1 @@
-FROM node:14-alpine
-WORKDIR /todo-app/back-end
-COPY back-end ./
-RUN npm install
-EXPOSE 3001
-
+docker image build -t todobackend ./todo-app/back-end/
